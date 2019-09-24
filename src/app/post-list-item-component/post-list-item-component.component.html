@@ -1,8 +1,6 @@
-<li [ngClass]="{
-  'list-group-item': true,
-  'list-group-item-success': loveIts > 0,
-  'list-group-item-danger': loveIts < 0}"
-    class="mx-3">
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': loveIts > 0,
+                 'list-group-item-danger': loveIts < 0}">
 
   <span class="float-right">{{ createdAt | date: 'short' | uppercase }}</span>
   <h4>{{ title }}</h4>
